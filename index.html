@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="calc.js"></script>
+    <title>calculator</title>
+
+    <style>
+        
+    </style>
+</head>
+<body>
+    <div class="calculator">
+        <form name ="cal">
+            
+            <center>
+                <fieldset>
+                    <center>
+                        <div class="but">
+                        <!-- the display screeen and delete button -->
+                        <input type="text" name = "display" id="display" placeholder="0" readonly> &nbsp;&nbsp;<button class="cancel"> DEL</button>
+                            
+                            <br>
+                            <br>
+                            <!-- buttons -->
+                            <input type="button" class="butt" value="7" onclick="cal.display.value +=7">
+                            <input type="button" class="butt" value="8" onclick="cal.display.value +=8">
+                            <input type="button" class="butt" value="9" onclick="cal.display.value +=9">
+                            <input type="button" class="mat" value="/" onclick="cal.display.value  +='/'">
+                            <br>
+                            
+                            <input type="button" class="butt" value="4" onclick="cal.display.value +=4">
+                            <input type="button" class="butt" value="5" onclick="cal.display.value +=5">
+                            <input type="button" class="butt" value="6" onclick="cal.display.value +=6">
+                            <input type="button" class="mat" value="*" onclick="cal.display.value +='*'">
+                            <br>
+                            <input type="button" class="butt" value="1" onclick="cal.display.value +=1">
+                            <input type="button" class="butt" value="2" onclick="cal.display.value +=2">
+                            <input type="button" class="butt" value="3" onclick="cal.display.value +=3">
+                            <input type="button" class="mat" value="-" onclick="cal.display.value +='-'">
+                            <br>
+                            <input type="button" class="mat" value="." onclick="cal.display.value +='.'">
+                            <input type="button" class="butt" value="0" onclick="cal.display.value +=0">
+                            <input type="button" class="mat" value="+" onclick="cal.display.value +='+'">
+                            <input type="button" class="mat" value="%" onclick="cal.display.value +='%'">
+                            
+                            
+                            <br>
+                            <input type="button" class="equal" value="=" onclick="cal.display.value=eval(cal.display.value)">
+                        
+                        </div>
+        
+                    </center>
+                      
+              
+                </fieldset>  
+                
+            </center>
+         
+        </form>
+   
+</div>
+</body>
+
+
+</html>
